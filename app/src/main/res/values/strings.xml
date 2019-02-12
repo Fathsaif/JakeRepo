@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JakeRepo</string>
+
+    <string name="no_data">No Data</string>
+
+    <string name="text_ok">OK</string>
+    <string name="text_loading">Loading</string>
+    <!--errors-->
+    <string name="error_occured">Error Occurred</string>
+    <string name="error_connection">No Internet Connection</string>
+
+</resources>

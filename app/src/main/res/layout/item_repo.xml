@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.saif.jakerepo.utils.CircleImageView
+        android:id="@+id/img_owner"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_8sdp"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/txt_repo_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="@id/img_owner"
+        app:layout_constraintStart_toEndOf="@id/img_owner"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+   <TextView
+       android:id="@+id/txt_repo_description"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/txt_repo_title"
+       app:layout_constraintStart_toStartOf="@id/txt_repo_title"
+       android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+       android:layout_marginEnd="@dimen/_8sdp"
+       android:maxLines="3"
+       android:ellipsize="end"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/img_owner"
+        android:background="@color/colorPrimary"
+
+        />
+</android.support.constraint.ConstraintLayout>
